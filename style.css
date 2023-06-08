@@ -1,0 +1,101 @@
+/* 全局样式 */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+}
+
+a {
+    color: #f40;
+    text-decoration: none;
+}
+
+header, main, footer {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+/* 头部 */
+
+.header {
+    background-color: #f9f9f9;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+}
+
+.header h1 a {
+    font-size: 32px;
+    font-weight: bold;
+    color: #333;
+}
+
+.header nav ul {
+    list-style: none;
+    display: flex;
+}
+
+.header nav li {
+    margin-left: 20px;
+}
+
+/* 主体内容 */
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+section h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* 底部 */
+
+.footer {
+    background-color: #f9f9f9;
+    padding: 20px;
+    text-align: center;
+    border-top: 1px solid #ccc;
+}
+
+/* 响应式布局 */
+
+@media screen and (max-width: 767px) {
+    .header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header h1 {
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .header nav {
+        margin-top: 20px;
+    }
+
+    .header nav ul {
+        flex-direction: column;
+    }
+
+    .header nav li {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+}
